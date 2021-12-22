@@ -4,6 +4,10 @@ import { FaEllipsisV } from 'react-icons/fa';
 
 import { Container, StyledButton } from './styles';
 
+type DropdownMenuProps = {
+  isLoading?: boolean;
+}
+
 export const DropdownMenu = ({
   isLoading = false,
 }: DropdownMenuProps): JSX.Element => {
