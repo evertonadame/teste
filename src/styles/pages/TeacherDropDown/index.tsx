@@ -18,8 +18,8 @@ const [open, setOpen] = useState(false);
     <Container>
       <FaEllipsisV onClick={() => setOpen((state) => !state)} size={22} />
       <ul className={`options ${open ? 'menu-visible' : ''}`}>
-        <StyledButton type="button" className="student-doubt" disabled={isLoading}>
-          <li>{isLoading ? 'Carregando...' : ''}</li>
+        <StyledButton>
+          <li>Carregando..</li>
         </StyledButton>
       </ul>
     </Container>
