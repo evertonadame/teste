@@ -6,7 +6,7 @@ import { Container, StyledButton } from './styles';
 
 export const DropdownMenu = ({
   isLoading = false,
-}: DropdownMenuProps): JSX.Element => {
+}): JSX.Element => {
 
 const [open, setOpen] = useState(false);
 
