@@ -15,7 +15,6 @@ import { DoubtInfoDTO } from 'types/dtos/subjectDTOS';
 import { Tooltip } from 'components/Atoms/Tooltip';
 import { Loading } from 'components/Atoms/Loading';
 import { Message } from './Components/Atoms/Message';
-
 import { Heading } from './Components/Mols/Heading';
 import { ChatActions } from './Components/Mols/ChatActions';
 
