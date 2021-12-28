@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 
   @media (max-width: 768px) {
     margin-top: 1rem;
@@ -17,7 +17,7 @@ export const Content = styled.section`
   flex-direction: column;
   width: 100%;
 
-  padding: 1.8rem 15rem;
+  padding: 1.8rem 5rem;
   
   @media screen and (max-width:768px) {
     padding: 1rem;
@@ -65,9 +65,9 @@ flex-direction: row;
 
 export const QuestionContainer = styled.div`
   display: flex;
-  width: 80%;
+  width: 55%;
   flex-direction: column;
-  margin-top: 4rem;
+  margin-top: 2rem;
 
   @media(max-width: 768px) {
     width: 100%;
@@ -93,7 +93,7 @@ export const ButtonsContainer = styled.div`
   gap: 2rem;
   align-items: flex-end;
   justify-content: space-between;
- 
+  margin-top: 1rem;
 
   @media (max-width: 768px) {
     justify-content: center;

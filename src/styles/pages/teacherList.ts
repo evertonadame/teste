@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   height: calc(100vh - 122px);
-  padding: 1.8rem 15rem;
+  padding: 1.8rem 5rem;
 
   @media screen and (max-width: 768px) {
     padding: 1rem;
@@ -16,7 +16,11 @@ export const Container = styled.div`
     justify-content: space-between;
     vertical-align: middle;
     
- 
+    .duvida-wrapper {
+      display: flex;
+      align-items: center;
+
+    }
     .doubt-wrapper{
       display: flex;
     }
@@ -108,7 +112,7 @@ export const YellowBar = styled.div`
   height: 1.5rem;
   width: 52%;
   padding: 0 1rem 0 0;
-  margin-left: -15rem;
+  margin-left: -6rem;
   z-index: -1;
 
   background: var(--yellow-150);
@@ -162,7 +166,7 @@ export const YellowBar = styled.div`
   }
 
   @media(max-width:1232px){
-    height: 3rem;
+    height: 2rem;
 
     &::before,&::after{
       height: 2.5rem;
@@ -184,6 +188,9 @@ export const WaitingTeacher = styled.div`
   align-items: center;
   margin-top: 1rem;
   justify-content:center;
+  @media(min-width: 1024px) {
+    justify-content: left;
+  }
   .image-wrapper{
     display: flex;
     justify-content: center;

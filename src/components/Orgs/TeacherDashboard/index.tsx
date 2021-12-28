@@ -193,9 +193,11 @@ export const TeacherDashboard = (): JSX.Element => {
         </div>
       </YellowBar>
       <DoubtsList
-        acceptedDoubts={teacherDashboard?.profiles[0]?.user_profile.accepted ?? []}
+       
         activeDoubts={teacherDashboard?.profiles[0]?.user_profile.active ?? []}
-        notAnsweredDoubts={teacherDashboard?.profiles[0]?.user_profile.notAnswered ?? []}
+          notAnsweredDoubts={teacherDashboard?.profiles[0]?.user_profile.notAnswered ?? []}
+         acceptedDoubts={teacherDashboard?.profiles[0]?.user_profile.accepted ?? []}
+    
         isLoading={isLoading}
         buttonIsLoading={buttonIsLoading}
       />

@@ -10,20 +10,36 @@ export const HeaderCont = styled.header`
     height: 75px;
     width: 100%;
     background: linear-gradient(to bottom, #800080 49%, transparent);
+
+
+    .saparator-header {
+      @media(max-width: 768px) {
+        display: none;
+      }
+    }
   }
 
 `
-export const ImgContainer = styled.img`
-      position: absolute;
+export const ImgContainer1 = styled.img`
+      margin: 0.5rem;
       width: 4rem;
       height: 4rem;
-      left: 4%;
-      top: 1%;
+      cursor: pointer;
+      @media(min-width: 1024px) {
+        display: none;
+      }
 
-    @media (min-width: 1024px) {
-      top: 5%;
-      left: 7%;
-    }
+ 
+`
+export const ImgContainer2 = styled.img`
+      margin-right: 2rem;
+      width: 4rem;
+      height: 4rem;
+      cursor: pointer;
+      @media(max-width: 768px) {
+        display: none;
+      }
+
 `
 export const UserSchoolInfo = styled.div`
   color: var(--gray-150);

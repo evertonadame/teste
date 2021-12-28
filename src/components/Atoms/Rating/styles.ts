@@ -19,7 +19,7 @@ export const Container = styled.div<ContainerProps>`
 
   transition: filter .2s;
   ${(props) => props.isLoading && css`
-    filter: opacity(0.6);
+    filter: opacity(1);
     pointer-events: none;
   `}
 `;

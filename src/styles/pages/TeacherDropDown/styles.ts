@@ -5,7 +5,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 100%;
-
+ 
   
   svg{
     transition: filter .2s;
@@ -36,6 +36,10 @@ export const Container = styled.div`
     transition: all ease .5s;
     list-style: none;
 
+    @media (min-width: 1024px) {
+      right: 1.8rem;
+    }
+
     .student-doubt{
       height:100%;
       width:100%;
@@ -45,7 +49,7 @@ export const Container = styled.div`
       border: none;
       background: transparent;
       margin: 0;
-       height: 100%;
+      height: 100%;
       width: 100%;
       &:disabled{
         opacity: 0.6;
@@ -84,6 +88,10 @@ export const Container = styled.div`
         margin-top: 2rem;
         width: 88%;
       }
+      @media(min-width: 1024px) {
+        width: 500px;
+        margin-top: 2rem;
+      }
     }
 
     &::before {
@@ -97,6 +105,7 @@ export const Container = styled.div`
       border-bottom: 10px solid transparent;
       left: -20px;
       top: 6px;
+      display: none;
 
       @media(max-width: 768px) {
         display: none;

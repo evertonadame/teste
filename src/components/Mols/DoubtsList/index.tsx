@@ -45,8 +45,8 @@ export const DoubtsList = ({
 
   return (
     <Container>
-      <List>
-        <span>Perguntas Abertas</span>
+      <List> 
+        <span className="open-doubt">Perguntas Abertas</span>
         <div className="content hasVerticalScroll">
           {(notAnsweredDoubts.length > 0 && !isLoading)
             && notAnsweredDoubts.map((doubt) => (
@@ -81,29 +81,7 @@ export const DoubtsList = ({
           </WaitingTeacher>
         </div>
       </List>
-      <List>
-        <div className="auto sub-list">
-          <span>Perguntas Ativas</span>
-          <div className="sub-content auto hasVerticalScroll">
-            {(activeDoubts.length > 0 && !isLoading)
-              && activeDoubts.map((doubt) => (
-                <DoubtCard
-                  key={doubt.doubt_id}
-                  doubt={doubt}
-                  actionText="Acessar chat"
-                  action={() => push(`/chat?doubtid=${doubt.doubt_id}`)}
-                  chatStyle
-                  buttonIsLoading={buttonIsLoading}
-                />
-              ))}
-            {isLoading && (
-              <>
-                <SKDoubtCard />
-              </>
-            )}
-          </div>
-        </div>
-      </List>
+    
       <List>
       <div className={`sub-list ${activeDoubts.length < 1 ? 'flex-1' : ''}`}>
           <span>Perguntas Aceitas</span>
@@ -122,6 +100,29 @@ export const DoubtsList = ({
               <>
                 <SKDoubtCard />
                 <SKDoubtCard />
+                <SKDoubtCard />
+              </>
+            )}
+          </div>
+        </div>
+      </List>
+        <List>
+        <div className="auto sub-list">
+          <span>Perguntas Ativas</span>
+          <div className="sub-content auto hasVerticalScroll last-list">
+            {(activeDoubts.length > 0 && !isLoading)
+              && activeDoubts.map((doubt) => (
+                <DoubtCard
+                  key={doubt.doubt_id}
+                  doubt={doubt}
+                  actionText="Acessar chat"
+                  action={() => push(`/chat?doubtid=${doubt.doubt_id}`)}
+                  chatStyle
+                  buttonIsLoading={buttonIsLoading}
+                />
+              ))}
+            {isLoading && (
+              <>
                 <SKDoubtCard />
               </>
             )}

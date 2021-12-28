@@ -118,6 +118,7 @@ const TeacherList = ({ subject, doubtId }: TeacherListProps): JSX.Element => {
           <p>{subject.name}</p>
         </div>
         </div>
+        <div className="duvida-wrapper">
         <Tooltip
           title="ATENÇÃO! Você irá cancelar a dúvida"
           beforeColor="#c53030"
@@ -141,7 +142,10 @@ const TeacherList = ({ subject, doubtId }: TeacherListProps): JSX.Element => {
             )}
           </button>
         </Tooltip>
-          <DropdownMenu/>
+        <DropdownMenu/>
+        </div>
+
+
       </div>
     
       <Heading>

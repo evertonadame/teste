@@ -7,7 +7,6 @@ export const Container = styled.div`
   display: flex;
   width: 100%;
   height: 5rem;
-
   padding: 1rem;
   border-radius: 0.25rem;
   background: var(--wine);

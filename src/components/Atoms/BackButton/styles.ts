@@ -13,8 +13,8 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1.625rem;
-    height: 1.625rem;
+    width: 2.625rem;
+    height: 2.625rem;
 
     border-radius: 0.25rem;
 

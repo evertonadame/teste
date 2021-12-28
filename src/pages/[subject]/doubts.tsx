@@ -34,8 +34,10 @@ type DataFormInfo = {
 }
 
 const Doubts = ({ subject }: DoubtsProps): JSX.Element => {
-  const [imagesArray, setImagesArray] = useState<string[]>(['']);
 
+  
+  const [imagesArray, setImagesArray] = useState<string[]>(['']);
+  
   const { submitDoubt, isLoading } = useDoubt();
   const { user } = useAuth();
   const { push } = useRouter();
@@ -84,10 +86,11 @@ const Doubts = ({ subject }: DoubtsProps): JSX.Element => {
         formRef.current?.setErrors(errors);
       }
     }
-
+  
   }, [submitDoubt, subject.name, user.userId, imagesArray, push]);
-
+ 
   return (
+    
     <Container>
       <Seo title="Lista de dúvidas | Uber de plantões" metaDesc="Created by thl dev" />
       <Content>
@@ -116,6 +119,7 @@ const Doubts = ({ subject }: DoubtsProps): JSX.Element => {
                 id="textarea"
                 name="question"
                 containerStyle={{ width: '100%' }}
+               
               />
               <ButtonsWrapperContainer>
              
@@ -133,6 +137,7 @@ const Doubts = ({ subject }: DoubtsProps): JSX.Element => {
 };
 
 export default Doubts;
+
 
 export const getServerSideProps = withSSRAuth(async (ctx) => {
   const { query } = ctx;

@@ -14,7 +14,7 @@ import { convertTimeStampToTimeLog } from 'utils/functions';
 import { DoubtInfoDTO } from 'types/dtos/subjectDTOS';
 import { Tooltip } from 'components/Atoms/Tooltip';
 import { Loading } from 'components/Atoms/Loading';
-
+import Header from 'components/Mols/Header';
 import { Message } from './Components/Atoms/Message';
 
 import { Heading } from './Components/Mols/Heading';
@@ -247,7 +247,7 @@ export const MyChat = ({ doubtInfo, opacity }: MyChatProps): JSX.Element => {
     );
   }, [stopWatchTime, doubtInfo.teacher_subject.price, user.wallet.balance]);
 
-  
+
   
 
   return (

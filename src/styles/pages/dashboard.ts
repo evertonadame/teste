@@ -17,7 +17,7 @@ export const YellowBar = styled.div`
   display: flex;
   flex-direction: column;
   height: 1.5rem;
-  width: 35%;
+  width: 50%;
   padding: 0 1rem 0 0;
   margin-left: -15rem;
   margin-bottom: 0.5rem;

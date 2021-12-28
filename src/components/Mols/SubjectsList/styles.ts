@@ -17,10 +17,11 @@ export const Content = styled.section<SubjectsContainerProps>`
   gap: 1rem;
   row-gap: 0.5rem;
   margin-top: 4rem;
-  padding: 1rem;
+  padding: 1rem 3rem;
 
   @media (max-width: 768px) {
     margin-top: 0;
+    padding: 1rem;
   }
 
   ${(props) => props.isLoading && css`

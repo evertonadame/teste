@@ -2,7 +2,7 @@
 import { ReactNode } from 'react';
 import Burguer from './Burguer';
 import { 
-  ImgContainer,
+  ImgContainer1,
   HeaderCont
 } 
 from './styles';
@@ -36,14 +36,13 @@ if ((!user.name && !session) || pathname === '/' || pathname === '/chat') return
   return (
     
     <HeaderCont>
-        <ImgContainer
+       <ImgContainer1
             onClick={() => push('/')}
             src="/assets/images/nextLevel.png"
             alt="nllogo"
           />
-          
         <Burguer/>
-        <Separator type="horizontal"/>
+        <Separator type="horizontal" className="saparator-header"/>
     </HeaderCont>
 
   );

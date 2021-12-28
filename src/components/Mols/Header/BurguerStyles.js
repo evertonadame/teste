@@ -40,10 +40,17 @@ export const StyledBurger = styled.div`
 export const Ul = styled.ul`
   list-style: none;
   display: flex;
-  justify-content: right;
+  position: relative;
+  justify-content: space-between;
   flex-flow: row nowrap;
   align-items: center;
 
+  .container-wrapper {
+    @media (min-width: 1024px) {
+      display: flex;
+      align-items:center;
+    }
+  }
   
   li {
     text-align: right;
@@ -59,6 +66,7 @@ export const Ul = styled.ul`
     transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
+    justify-content: right;
     z-index: 2;
     height: 100vh;
     width: 250px;
@@ -74,18 +82,12 @@ export const Ul = styled.ul`
     }
   }
   @media (min-width: 1024px) {
-    padding-left: 14%;
-    justify-content: left;
-    padding-top: 1%;
-    padding-bottom: 2%;
+   
+    padding: 1rem 5rem;
     
   }
-  @media (min-width: 1024px) {
-    li {
-      margin-right: 3rem;
-
-    }
-  }
+  
+  
  
 `;
 
@@ -117,6 +119,12 @@ export const StatusContainer = styled.div`
   display: flex;
   justify-content: right;
   align-items: center;
+  margin-right: 1rem;
+
+
+  .status-separator {
+    display: flex;
+  }
 `
 export const DrescriptionContainer = styled.div`
   display: flex;
@@ -127,12 +135,6 @@ export const DrescriptionContainer = styled.div`
 export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: right;
-  
-  @media (min-width: 1024px) {
-    position: absolute;
-    right: 3%;
-    top: 7%;
-  }
 `;
 export const CarteiraContainer = styled.div`
  

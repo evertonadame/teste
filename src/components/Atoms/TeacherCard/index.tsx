@@ -80,7 +80,7 @@ export const TeacherCard = ({ additionalInfo, teacher, doubtId }:TeacherCardProp
           <div className="content">
             <Stars>
               <Rating
-                isLoading={false}
+                isLoading
                 ratingNote={Number(additionalInfo?.stars) ?? 0}
                 starsSize={18}
                 onChange={(e) => console.log(e)}

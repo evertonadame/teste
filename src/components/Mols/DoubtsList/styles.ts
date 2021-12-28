@@ -36,9 +36,11 @@ export const List = styled.div`
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     line-height: 1.125rem;
-    margin: 1rem 0
+    margin: 1rem 0;
   }
-
+  .open-doubt {
+    padding: 1rem;
+  }
   .content{
     display: flex;
     flex-direction: column;
@@ -46,6 +48,7 @@ export const List = styled.div`
     height: 100%;
     max-height: 100%;
     overflow-y: auto;
+    padding: 0 1rem;
   }
 
   .sub-list{
@@ -64,7 +67,7 @@ export const List = styled.div`
       flex-direction: column;
       width: 100%;
       height: 100%;
-
+      margin-top: 1rem;
       max-height: 100%;
       overflow-y: auto;
     }

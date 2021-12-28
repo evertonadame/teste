@@ -5,8 +5,9 @@ import { convertNumberToBRL, translateLevelId, translatePhaseId } from 'utils/fu
 import { useAuth } from 'hooks/auth';
 import { useWs } from 'hooks/ws';
 import { useChat } from 'hooks/chat';
-import { UserSchoolInfo } from './styles';
-
+import { UserSchoolInfo, ImgContainer2 } from './styles';
+import { Separator } from 'components/Atoms/Separator';
+import { useRouter } from 'next/router';
 
 const RightNav = ({ open }) => {
 
@@ -14,7 +15,7 @@ const RightNav = ({ open }) => {
   const { handleSignOut, user } = useAuth();
   const { closeConnection } = useWs();
   const { recievedMessage, resetRecievedMessage } = useChat();
-
+  const { push, pathname } = useRouter();
 
   useEffect(() => {
     if (recievedMessage.type === 'availability_changed') {
@@ -28,9 +29,19 @@ const RightNav = ({ open }) => {
   return (
 
     <>
+    
     <Ul open={open}>
+      
+      <div className="container-wrapper">
       <li>
         <StatusContainer>
+          
+           <ImgContainer2
+            onClick={() => push('/')}
+            src="/assets/images/nextLevel.png"
+            alt="nllogo"
+          />
+          <Separator customHeight={50} type="vertical" />
           <ImgContainerStatus>
             <ImgUser
               src={user.imageUrl !== ' ' ? user.imageUrl : 'https://nextlevelimagesprofile.s3-sa-east-1.amazonaws.com/defaultUser.png'}
@@ -38,9 +49,7 @@ const RightNav = ({ open }) => {
             />
             <UserStatus status={participantAvailability} />
           </ImgContainerStatus>
-
           <DrescriptionContainer>
-
             <UserSchoolInfo>
               <h3>{user.name}</h3>
               {user.profileId === 'Student' ? (
@@ -71,7 +80,8 @@ const RightNav = ({ open }) => {
             )}
           </div>
         </CarteiraContainer>
-      </li>
+      </li> 
+    </div>
       <li>
         <ButtonsContainer>
           <StyledButton

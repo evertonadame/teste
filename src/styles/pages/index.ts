@@ -13,7 +13,10 @@ export const LogoContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 13.5rem;
-  margin-bottom: 2rem;
+  
+   @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
 `;
 
 export const ContainerSeparator = styled.div`
@@ -34,6 +37,7 @@ margin: 4.5rem 0 5.8rem 0;
 }
 @media(min-width: 1024px){
   width: 19%;
+  margin: 2.5rem 0 3.8rem 0;
 }
 @media(min-width: 1440px){
   width: 18%;
@@ -58,7 +62,10 @@ export const FormContainer = styled.section`
     align-items: center;
     gap: 1rem 0;
     width: 100%;
-  
+
+    .form-group{
+      width: 100%;
+    }
     
     .forgot-password{
       display: flex;
@@ -90,8 +97,13 @@ export const FormContainer = styled.section`
             width: 63%;
             text-align: right;
           }
-          @media(min-width: 768px){
+          @media(min-width: 1024px){
             width: 28%;
+            text-align: right;
+            
+        }
+         @media(min-width: 1440px){
+            width: 24%;
             text-align: right;
             
         }

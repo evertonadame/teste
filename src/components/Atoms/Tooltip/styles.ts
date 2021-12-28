@@ -23,6 +23,10 @@ export const Container = styled.div<ContainerProps>`
     transform: translateX(-50%);
     color: #312e38;
 
+    @media (min-width: 1024px) {
+      width: 300px;
+    }
+
     @media(max-width: 768px) {
       bottom: calc(+130%);
     }

@@ -147,8 +147,8 @@ export const RatingPage = ({ doubtid }: RatingProps): JSX.Element => {
             <div className="img">
               <Image
                 src={getParticipantImage()}
-                width={75}
-                height={75}
+                width={66}
+                height={66}
                 layout="intrinsic"
                 objectFit="cover"
               />
