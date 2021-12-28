@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { FaEllipsisV } from 'react-icons/fa';
 // Completed
-
-import { Container, StyledButton } from './styles';
+import { Container } from './styles';
 
 export const DropdownMenu = ({
   isLoading = false,
