@@ -9,7 +9,7 @@ export const ChatContainer = styled.div`
   display: flex;
   flex-direction: column;
   font-family: Roboto;
-    @media (min-width: 1024px) {
+    @media (min-width: 824px) {
     margin-top: 4rem;
   }
 `;

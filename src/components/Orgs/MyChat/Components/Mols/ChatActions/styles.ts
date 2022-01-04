@@ -54,9 +54,12 @@ export const Container = styled.div<ContainerProps>`
       align-items: center;
       width: 100%;
       margin-right: 2rem;
-      
+
       @media(max-width: 768px) {
         margin-right: 0;
+      }
+      @media(min-width: 769px) {
+        width: 85%;
       }
       textarea{
 

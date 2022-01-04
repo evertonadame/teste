@@ -109,7 +109,7 @@ export const StyledButton = styled(Button)`
   }
 
   &.photo{
-    height: 180px;
+    height: 165px;
     width: 230px;
     background: var(--dark-purple);
     border: solid 2px var(--dark-purple);
@@ -138,6 +138,7 @@ export const StyledButtonSemFoto = styled(Button)`
   font-weight: 800;
   overflow: hidden;
   padding: 0.4rem;
+
   
 
 `

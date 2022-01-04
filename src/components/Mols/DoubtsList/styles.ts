@@ -7,8 +7,10 @@ export const Container = styled.div`
   height: 100%;
   margin-top: 1.5rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 914px) {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 
   }
@@ -17,18 +19,18 @@ export const Container = styled.div`
 export const List = styled.div`
   display: flex;
   flex-direction: column;
-  width: 49%;
+  width: 28%;
   height: 100%;
-  min-height: 120px;
+  min-height: 420px;
   align-items: center;
   border-radius: 0.25rem;
   margin: 1.8rem;
   border: solid 1px var(--purple-110);
 
-  @media screen and (max-width: 768px) {
-    
+  @media screen and (max-width: 914px) {
     margin: 0 0 1rem 0;
     width: 100%;
+    min-height: 130px;
   }
 
 

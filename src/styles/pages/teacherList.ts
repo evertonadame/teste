@@ -5,8 +5,7 @@ export const Container = styled.div`
   padding: 1.8rem 5rem;
 
   @media screen and (max-width: 768px) {
-    padding: 1rem;
-
+    padding: 0.5rem 1rem 1rem 1rem;
   }
   
   .doubt-actions{
@@ -80,9 +79,11 @@ export const Heading = styled.header`
   display: flex;
   flex-direction: column;
   width: 100%;
-
   margin-top: 4rem;
 
+@media (max-width: 425px) {
+  margin-top: 1rem;
+}
  
 
   span{

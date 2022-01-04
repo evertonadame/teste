@@ -9,10 +9,8 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
-    @media (min-width: 1024px) {
-    margin-top: 4rem;
-  }
+  overflow: hidden;
+
 `;
 
 export const TimerContainer = styled.div<ContainerProps>`
@@ -30,7 +28,7 @@ export const TimerContainer = styled.div<ContainerProps>`
     display: flex;
     align-items: center;
   }
-  @media(min-width: 1024px){
+  @media(min-width: 769px){
     display: none;
   }
 
@@ -79,14 +77,14 @@ export const ChatContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 550px;
+  height: 75vh;
   border-radius: 0.625rem;
   background: var(--dark-125-purple);
 
   @media(max-width:768px){
-    width: 100vw;
-    min-height: 100%;
-    padding: 5rem 0 0  0;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
   }
   .image-preview-wrapper{
     position: absolute;
@@ -167,31 +165,23 @@ export const ChatContainer = styled.div`
     margin-top: 0;
   }
 
-  @media(max-width: 1300px){
-    height: 92%;
-  }
 
-  @media(max-width: 1200px){
-    height: 92%;
-    margin-bottom: 0;
-  }
+
 `;
 
 export const MessagesBox = styled.div`
   display: flex;
   width: 100%;
   position: relative;
-  height: 100vh;
   flex-direction: column;
   gap: 1.5rem;
   overflow-y: auto;
   padding: 2rem 0.625rem;
-
-  @media(max-width: 768px){
-    padding: 0 0.625rem 11rem 0.625rem;
-    min-height: 100vh;
+  height: 100%;
+  @media(max-width: 768px) {
+    margin-bottom: 9rem;
   }
-  
+
  
   #sentinela{
     opacity: 0;

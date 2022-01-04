@@ -8,13 +8,13 @@ export const Container = styled.div`
   width: 100%;
   margin-left: auto;
   z-index: 999;
-  margin-top: .5rem;
+
   
   @media(max-width: 768px) {
     margin-top: 0;
     position: fixed;
     top: 0;
-    z-index: 20;
+    z-index: 200;
     background: rgba(61,15,73,1);
     margin-top: 0;
   }
@@ -165,7 +165,7 @@ export const TimerContainer = styled.div`
   }
 
   &.teacher{
-    width: 16%;
+    width: 20%;
   }
 
   .time-info{

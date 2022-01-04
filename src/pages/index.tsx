@@ -93,6 +93,7 @@ const Home = (): JSX.Element => {
         <Image src="/assets/svgs/projectTitle.svg" width={86} height={33} objectFit="contain" />
       </LogoContainer>
       <FormContainer>
+          <p>LOGIN</p>
         <Form ref={formRef} onSubmit={handleLogin} autoComplete="off">
          
           <Input

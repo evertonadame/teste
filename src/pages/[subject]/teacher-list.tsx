@@ -150,7 +150,7 @@ const TeacherList = ({ subject, doubtId }: TeacherListProps): JSX.Element => {
     
       <Heading>
      
-        <TimerDivider />
+        {/* <TimerDivider /> */}
         <YellowBar>
           <div className="content">
             <span>SELECIONE O PROFESSOR</span>

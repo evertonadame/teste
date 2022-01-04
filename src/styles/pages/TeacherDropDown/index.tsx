@@ -1,22 +1,23 @@
 import { useState } from 'react';
 import { FaEllipsisV } from 'react-icons/fa';
 // Completed
-import { Container } from './styles';
+
+import { Container, StyledButton } from './styles';
 
 export const DropdownMenu = ({
   isLoading = false,
-}): JSX.Element => {
+}: DropdownMenuProps): JSX.Element => {
 
 const [open, setOpen] = useState(false);
 
   return (
     <Container>
       <FaEllipsisV onClick={() => setOpen((state) => !state)} size={22} />
-      {/* <ul className={`options ${open ? 'menu-visible' : ''}`}>
+      <ul className={`options ${open ? 'menu-visible' : ''}`}>
         <StyledButton type="button" className="student-doubt" disabled={isLoading}>
           <li>{isLoading ? 'Carregando...' : ''}</li>
         </StyledButton>
-      </ul> */}
+      </ul>
     </Container>
   );
 

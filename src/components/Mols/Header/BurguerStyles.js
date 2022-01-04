@@ -6,7 +6,7 @@ export const StyledBurger = styled.div`
   position: absolute;
   top: 20px;
   right: 15px;
-  z-index: 20;
+  z-index: 25;
   display: none;
   
   
@@ -46,7 +46,14 @@ export const Ul = styled.ul`
   align-items: center;
 
   .container-wrapper {
-    @media (min-width: 1024px) {
+    @media (min-width: 769px) {
+      display: flex;
+      align-items:center;
+    }
+  }
+
+  .wrapper-two {
+     @media (min-width: 769px) {
       display: flex;
       align-items:center;
     }
@@ -67,7 +74,7 @@ export const Ul = styled.ul`
     top: 0;
     right: 0;
     justify-content: right;
-    z-index: 2;
+    z-index: 10;
     height: 100vh;
     width: 250px;
     padding-top: 3.5rem;
@@ -78,12 +85,12 @@ export const Ul = styled.ul`
       border-bottom: 1px solid white;
       padding-right: .5rem;
       padding: 1rem;
-      
+      text-align: -webkit-right;
     }
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 769px) {
    
-    padding: 1rem 5rem;
+    padding: 0.5rem 5rem;
     
   }
   
@@ -98,7 +105,7 @@ export const StyledButton = styled.button`
   display: flex;
   border-radius: 5px;
   background: transparent;
-
+  
   img{
     margin-left: 1rem;
   } 
@@ -135,7 +142,18 @@ export const DrescriptionContainer = styled.div`
 export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: right;
+  margin-right: 0.3rem;
 `;
 export const CarteiraContainer = styled.div`
- 
+  padding: 0.5rem;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,219,52,1) 0%);
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 50%;
+  @media(min-width: 769px) {
+    margin-right: 2rem;
+    width: 90%
+  }
 `;

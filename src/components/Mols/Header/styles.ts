@@ -7,7 +7,7 @@ interface UserContainerProps {
 export const HeaderCont = styled.header`
   background: linear-gradient(to bottom, #800080 10%, transparent);
   @media(max-width: 768px){
-    height: 75px;
+    height: 90px;
     width: 100%;
     background: linear-gradient(to bottom, #800080 49%, transparent);
 
@@ -25,7 +25,7 @@ export const ImgContainer1 = styled.img`
       width: 4rem;
       height: 4rem;
       cursor: pointer;
-      @media(min-width: 1024px) {
+      @media(min-width: 769px) {
         display: none;
       }
 
@@ -33,9 +33,11 @@ export const ImgContainer1 = styled.img`
 `
 export const ImgContainer2 = styled.img`
       margin-right: 2rem;
+      margin-left: -0.5rem;
       width: 4rem;
       height: 4rem;
       cursor: pointer;
+      margin-top: 0.5rem;
       @media(max-width: 768px) {
         display: none;
       }

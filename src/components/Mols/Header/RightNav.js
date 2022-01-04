@@ -35,7 +35,6 @@ const RightNav = ({ open }) => {
       <div className="container-wrapper">
       <li>
         <StatusContainer>
-          
            <ImgContainer2
             onClick={() => push('/')}
             src="/assets/images/nextLevel.png"
@@ -69,19 +68,20 @@ const RightNav = ({ open }) => {
           </DrescriptionContainer>
         </StatusContainer>
       </li>
-      <li>
+    </div>
+    <div className="wrapper-two">
+       <li>
         <CarteiraContainer>
           <div className="right">
-            {user.profileId !== 'Teacher' && (
+            {/* {user.profileId !== 'Teacher' && ( */}
               <div className="wallet">
-                <p>Carteira:</p>
+                <p>Minha Carteira</p>
                 <p className="value">{convertNumberToBRL(user?.wallet?.balance ?? 0)}</p>
               </div>
-            )}
+            {/* )} */}
           </div>
         </CarteiraContainer>
       </li> 
-    </div>
       <li>
         <ButtonsContainer>
           <StyledButton
@@ -97,6 +97,7 @@ const RightNav = ({ open }) => {
           </StyledButton>
         </ButtonsContainer>
       </li>
+      </div>
     </Ul>
     </>
   )

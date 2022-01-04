@@ -4,27 +4,25 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100vw;
+
   height: calc(100% - 124px);
 
-  @media(max-width: 1300px){
-    padding: 0;
-
-    height: calc(100% - 74px);
+  @media(min-width: 1180px){
+   width: 91vw;
+   padding-left: 7rem;
+   
   }
 `;
 
 export const ChatContainerr = styled.div`
   display: flex;
-  width: 72%;
+  width: 100%;
 
-  height: calc(100% - 16px);
+  @media (min-width: 1024px) {
+    width: 85%;
 
-  @media(max-width: 1200px){
-    width: 99%;
   }
-
-  @media(max-height: 650px){
-    height: 92%;
-  }
+ 
 `;

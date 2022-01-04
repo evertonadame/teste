@@ -8,7 +8,7 @@ export const Container = styled.div`
   margin-top: 0.5rem;
 
   @media (max-width: 768px) {
-    margin-top: 1rem;
+    margin-top: 0;
   }
 `;
 
@@ -16,11 +16,10 @@ export const Content = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
-
-  padding: 1.8rem 5rem;
+  padding: 1.3rem 5rem;
   
   @media screen and (max-width:768px) {
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
   }
 `;
 
@@ -69,6 +68,7 @@ export const QuestionContainer = styled.div`
   flex-direction: column;
   margin-top: 2rem;
 
+
   @media(max-width: 768px) {
     width: 100%;
     margin-top: 3rem;
@@ -77,6 +77,7 @@ export const QuestionContainer = styled.div`
     font-family: 'Roboto', sans-serif;
     font-size: 0.825rem;
     margin-bottom: 1rem;
+    margin-left: 0.1rem;
   }
 `;
 
@@ -98,7 +99,7 @@ export const ButtonsContainer = styled.div`
   @media (max-width: 768px) {
     justify-content: center;
       margin-top: 1rem;
-     
+      
   }
 `;
 
@@ -110,6 +111,7 @@ export const StyledButton = styled(Button)`
     width: 80%;
     padding: 0.7rem;
     margin-left: 3rem;
+    margin-right: 0.2rem;
   }
 
 
@@ -118,7 +120,7 @@ export const StyledButton = styled(Button)`
     background: var(--dark-purple);
     border: solid 2px var(--dark-purple);
     border-radius: 0.25rem;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;

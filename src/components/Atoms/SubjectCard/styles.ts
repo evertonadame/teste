@@ -11,6 +11,7 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 8.5rem;
+  margin: 0.5rem;
 
   font-family: 'Roboto', sans-serif;
 
@@ -18,15 +19,16 @@ export const Container = styled.div`
   border-radius: 0.625rem;
 
    @media screen and (min-width: 320px) {
-    width: 47%; 
+    width: 44%; 
   }
 
   @media screen and (min-width: 375px) {
-    width: 47%; 
+    width: 45%; 
   }
 
    @media screen and (min-width: 768px) {
     width: 31%; 
+
   }
 
   @media screen and (min-width: 1024px) {

@@ -20,6 +20,9 @@ export const Container = styled.button<ContainerProps>`
 
   transition: filter 0.2s;
 
+  @media(max-width: 320px) {
+    width: 10rem;
+  }
   &:hover{
     filter: brightness(0.8);
   }
